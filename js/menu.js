@@ -1,15 +1,24 @@
 (function () {
-    const openButton = document.querySelector('.nav_burger');
+    const burgerButton = document.querySelector('.nav_burger');
     const menu = document.querySelector('.nav_link');
-    const closeMenu = document.querySelector('.nav_close');
+    const navLinks = document.querySelectorAll('.nav_links');
 
-    openButton.addEventListener('click', ()=> {
-        menu.classList.add('nav_link--show');
-    });
+    let menuOpen = false;
 
-    closeMenu.addEventListener('click', ()=> {
-        menu.classList.remove('nav_link--show');
-    });
+    function toggleMenu() {
+        menuOpen = !menuOpen;
+        menu.classList.toggle('nav_link--show');
+        burgerButton.classList.toggle('is-open', menuOpen); // <-- Agrega/quita clase
+        document.body.style.overflow = menuOpen ? 'hidden' : '';
+    }
+
+    if (burgerButton && menu) {
+        burgerButton.addEventListener('click', toggleMenu);
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (menuOpen) toggleMenu();
+            });
+        });
+    }
 })();
-
-hola
