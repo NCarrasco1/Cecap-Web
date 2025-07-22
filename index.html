@@ -1,58 +1,88 @@
-     <!DOCTYPE html>
-     <html lang="es">
-     <head>
-     <meta charset="UTF-8" />
-     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <title>CECAP</title>
-     <link rel="shortcut icon" href="./Img/favicon.ico" type="image/x-icon" />
-     <link rel="stylesheet" href="./css/normalize.css" />
-     <link rel="stylesheet" href="./css/style.css" />
-     <meta name="theme-color" content="#2091F9" />
-     <!-- Primary Meta Tags -->
-     <meta name="title" content="CECAP - Centro Especializado en Cancer de Piel" />
-     <meta name="description" content="Centro especializado en cancer de piel, con dermatologas especialistas en la prevencion, diagnostico y tratamiento del cancer de piel. " />
+<!DOCTYPE html>
+<html lang="es">
+          <head>
+               <meta charset="UTF-8" />
+               <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+               <title>CECAP</title>
+               <link rel="shortcut icon" href="./Img/favicon.ico" type="image/x-icon" />
+               <link rel="stylesheet" href="./css/normalize.css" />
+               <link rel="stylesheet" href="./css/style.css" />
+               <meta name="theme-color" content="#2091F9" />
+               <!-- Primary Meta Tags -->
+               <meta
+                    name="title"
+                    content="CECAP - Centro Especializado en Cancer de Piel"
+               />
+               <meta
+                    name="description"
+                    content="Centro especializado en cancer de piel, con dermatologas especialistas en la prevencion, diagnostico y tratamiento del cancer de piel."
+               />
+               <!-- Meta Tags Generated with https://metatags.io -->
+               <link
+                    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+                    rel="stylesheet"
+                    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+                    crossorigin="anonymous"
+               />
+               <script
+                    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+                    crossorigin="anonymous"
+               ></script>
+               <link rel="preconnect" href="https://fonts.googleapis.com" />
+               <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+          </head>
+<!-- Seccion nav -->
+          <body class="body">
+               <header class="headercont">
+                    <nav class="nav">
+                         <button class="nav_burger" aria-label="Abrir menú">
+                              <img src="./Img/menu.png" alt="menu hamburguesa" class="burger_img" />
+                         </button>
+                         <div class="nav_logo">
+                              <!-- <h1>CECAP</h1> -->
+                              <img src="./Img/Cecap con fondo (2).svg" alt="Logo" />
+                         </div>
 
-     <!-- Meta Tags Generated with https://metatags.io -->
-     <link
-          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-          rel="stylesheet"
-          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-          crossorigin="anonymous"
-     />
-     <script
-          src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-          crossorigin="anonymous"
-     ></script>
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     </head>
-
-     <body class="body">
-          <header class="headercont">
-                    <nav class="nav container-fluid">
-                    <div class="nav_logo">
-                         <img src="./Img/Sin título.jpeg" alt="">
-                    </div>
-                    <ul class="nav_link">
-                         <li class="nav_items"><a href="./index.html" class="nav_links">Inicio</a></li>
-                         <li class="nav_items"><a href="#goals" class="nav_links">Nuestros Objetivos</a></li>
-                         <li class="nav_items"><a href="#us" class="nav_links">Acerca de</a></li>
-                         <li class="nav_items"><a href="#questions" class="nav_links">Preguntas Frecuentes</a></li>
-                    </ul>
-                    <button class="nav_burger" aria-label="Abrir menú">
-                         <img src="./Img/burger.svg" alt="menu hamburguesa" class="burger_img"/>
-                    </button>
+                         <!-- MENÚ LATERAL CON LOS ENLACES -->
+                         <ul class="nav_link" id="nav">
+                              <li class="nav_items">
+                                   <a href="./index.html" class="nav_links">Inicio</a>
+                              </li>
+                              <li class="nav_items">
+                                   <a href="#goals" class="nav_links">Objetivos</a>
+                              </li>
+                              <li class="nav_items">
+                                   <a href="#" class="nav_links">Servicios</a>
+                              </li>
+                              <li class="nav_items">
+                                   <a href="#" class="nav_links">Tipos de Cáncer</a>
+                              </li>
+                              <li class="nav_items">
+                                   <a href="#us" class="nav_links">Nosotros</a>
+                              </li>
+                              <li class="nav_items">
+                                   <a href="#questions" class="nav_links">FAQ</a>
+                              </li>
+                              <li class="nav_items">
+                                   <a href="./pages/contact.html" class="nav_links">Contacto</a>
+                              </li>
+                         </ul>
                     </nav>
-                    <section class="header_section container">
-                         <h1 class="header_title">CECAP</h1>
-                              <p class="header_paragraph header_title">Centro Especializado en Cancer de Piel</p>
-                         <a href="./pages/contact.html" class="buttons">Solicitá tu turno</a>
-                    </section>
-          </header>
 
-          <main>
-               <section class="container goals" id="goals">
+                    <section class="header_section container">
+                         <h1 class="header_title">Centro Especializado en Cancer de Piel</h1>
+                         <p class="header_paragraph header_title">
+                              Médicas especialistas en la prevención,<br>
+                              diagnóstico y tratamiento del cáncer de piel.
+                         </p>
+                         <br>
+                         <a href="./pages/contact.html" class="buttons">Solicitá tu turno &gt; </a>
+                    </section>
+               </header>
+     <!-- Seccion Objetivos  -->
+               <main>
+                    <section class="container goals" id="goals">
                     <h2 class="subtitle">Nuestros Objetivos</h2>
                     <p class="goals_paragraph">
                          Somos un centro especializado en cancer de piel. Conformado por
@@ -61,306 +91,286 @@
 
                     <div class="goals_main">
                          <article class="goals_icons">
-                         <img src="./Img/shapes.svg" alt="" class="goals_icon" />
-                         <h3 class="goals_title">Prevención y diagnostico</h3>
-                         <p class="goals__paragrah">
-                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
-                         tempore porro eius facilis?
-                         </p>
+                              <img src="./Img/shapes.svg" alt="" class="goals_icon" />
+                              <h3 class="goals_title">Prevención y diagnostico</h3>
+                              <p class="goals__paragrah">
+                              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
+                              tempore porro eius facilis?
+                              </p>
                          </article>
 
                          <article class="goals_icons">
-                         <img src="./Img/shapes.svg" alt="" class="goals_icon" />
-                         <h3 class="goals_title">Tratamiento</h3>
-                         <p class="goals__paragrah">
-                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
-                         tempore porro eius facilis?
-                         </p>
+                              <img src="./Img/shapes.svg" alt="" class="goals_icon" />
+                              <h3 class="goals_title">Tratamiento</h3>
+                              <p class="goals__paragrah">
+                              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
+                              tempore porro eius facilis?
+                              </p>
                          </article>
 
                          <article class="goals_icons">
-                         <img src="./Img/shapes.svg" alt="" class="goals_icon" />
-                         <h3 class="goals_title">Seguimiento</h3>
-                         <p class="goals__paragrah">
-                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
-                         tempore porro eius facilis?
-                         </p>
+                              <img src="./Img/shapes.svg" alt="" class="goals_icon" />
+                              <h3 class="goals_title">Seguimiento</h3>
+                              <p class="goals__paragrah">
+                              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
+                              tempore porro eius facilis?
+                              </p>
                          </article>
                     </div>
-               </section>
-               <section class="service">
-                    <div class="service_container container">
-                         <div class="service_texts">
-                         <h2 class="subtitle">Servicios</h2>
-                         <p class="service_paragraph">Consulta espcializada</p>
-                         <p class="service_paragraph">Evaluación interdisciplinaria</p>
-                         <p class="service_paragraph">Dermatoscopía</p>
-                         <p class="service_paragraph">Cirugía oncológica</p>
-                         <p class="service_paragraph">Criocirugía</p>
-                         <a href="" class="buttons">Mas info+</a>
-                         </div>
-
-                         <figure class="service_picture">
-                         <img
-                         src="./Img/Fondo Service.jpg"
-                         alt="imagen servicios"
-                         class="service_img"
-                         />
-                         </figure>
-                    </div>
-               </section>
-               <section class="types container">
-                    <h2 class="subtitle">Tipos de cancer más comunes</h2>
-                    <div class="types_table">
-                         <div class="types_element">
-                         <p class="types_name">Carcinoma Basocelular</p>
-                         <h3 class="types_info">+Más info</h3>
-
-                         <div class="types_items">
-                         <p class="types_features">lorem ipsum</p>
-                         <p class="types_features">lorem ipsum</p>
-                         <p class="types_features">lorem ipsum</p>
-                         </div>
-
-                         <a href="#" class="types_buttons">Solicitá una consulta</a>
-                         </div>
-
-                         <div class="types_element types_element--best">
-                         <p class="types_name">Carcinoma espinocelular</p>
-                         <h3 class="types_info">+Más info</h3>
-
-                         <div class="types_items">
-                         <p class="types_features">lorem ipsum</p>
-                         <p class="types_features">lorem ipsum</p>
-                         <p class="types_features">lorem ipsum</p>
-                         </div>
-
-                         <a href="#" class="types_buttons">Solicitá una consulta</a>
-                         </div>
-
-                         <div class="types_element">
-                         <p class="types_name">Melanoma</p>
-                         <h3 class="types_info">+Más info</h3>
-
-                         <div class="types_items">
-                         <p class="types_features">lorem ipsum</p>
-                         <p class="types_features">lorem ipsum</p>
-                         <p class="types_features">lorem ipsum</p>
-                         </div>
-
-                         <a href="#" class="types_buttons">Solicitá una consulta</a>
-                         </div>
-                    </div>
-               </section>
-
-               <section class="us" id="us">
-                    <div class="us_container container">
-                         <img src="./Img/leftarrow.svg" class="us_arrow" id="before" />
-
-                         <section class="us_body us_body--show" data-id="1">
-                         <div class="us_texts">
-                         <h2 class="subtitle">
-                              Mi nombre es Micaela,
-                              <span class="us_course">Médica Dermatóloga</span>
-                         </h2>
-                         <p class="us_review">
-                              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                              Distinctio quos ipsam, iusto saepe praesentium nemo minima fuga
-                              error magnam? Illum necessitatibus similique incidunt, impedit
-                              veniam vitae totam? Perferendis, voluptatum placeat!
-                         </p>
-                         </div>
-
-                         <figure class="us_picture">
-                         <img src="./Img/face1.jpg" class="us_img" />
-                         </figure>
-                         </section>
-
-                         <section class="us_body" data-id="2">
-                         <div class="us_texts">
-                         <h2 class="subtitle">
-                              Mi nombre es Micaela,
-                              <span class="us_course">Médica Dermatóloga</span>
-                         </h2>
-                         <p class="us_review">
-                              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                              Distinctio quos ipsam, iusto saepe praesentium nemo minima fuga
-                              error magnam? Illum necessitatibus similique incidunt, impedit
-                              veniam vitae totam? Perferendis, voluptatum placeat!
-                         </p>
-                         </div>
-
-                         <figure class="us_picture">
-                         <img src="./Img/face2.jpg" class="us_img" />
-                         </figure>
-                         </section>
-
-                         <section class="us_body" data-id="3">
-                         <div class="us_texts">
-                         <h2 class="subtitle">
-                              Mi nombre es Micaela,
-                              <span class="us_course">Médica Dermatóloga</span>
-                         </h2>
-                         <p class="us_review">
-                              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                              Distinctio quos ipsam, iusto saepe praesentium nemo minima fuga
-                              error magnam? Illum necessitatibus similique incidunt, impedit
-                              veniam vitae totam? Perferendis, voluptatum placeat!
-                         </p>
-                         </div>
-
-                         <figure class="us_picture">
-                         <img src="./Img/face3.jpg" class="us_img" />
-                         </figure>
-                         </section>
-
-                         <img src="./Img/rightarrow.svg" class="us_arrow" id="next" />
-                    </div>
-               </section>
-
-               <section class="questions container" id="questions">
-                    <h2 class="subtitle">Preguntas Frecuentes</h2>
-                    <p class="questions_paragraph">
-                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis
-                         sint non excepturi ratione officiis repellat, voluptatum vitae aliquid
-                         cumque libero sed voluptates nihil obcaecati dolor, eos, amet
-                         accusamus. Numquam, nulla?
-                    </p>
-
-               <section class="questions_container">
-                    <article class="questions_padding">
-                    <div class="questions_answer">
-                    <h3 class="questions_title">
-                         ¿Qué es el cancer de piel?
-                         <span class="questions_arrow">
-                         <img src="./Img/arrow.svg" class="questions_img" />
-                         </span>
-                    </h3>
-
-                    <p class="questions_show">
-                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                         Necessitatibus unde dolores soluta quos neque nisi accusantium.
-                         Dicta sit cum iure aliquid. Natus fuga optio, incidunt
-                         aspernatur eius nemo tempore ratione.Lorem ipsum dolor sit amet
-                         consectetur adipisicing elit. Necessitatibus unde dolores soluta
-                         quos neque nisi accusantium. Dicta sit cum iure aliquid. Natus
-                         fuga optio, incidunt aspernatur eius nemo tempore ratione.
-                    </p>
-                    </div>
-                    </article>
-
-                    <article class="questions_padding">
-                    <div class="questions_answer">
-                    <h3 class="questions_title">
-                         ¿Qué es el cancer de piel?
-                         <span class="questions_arrow">
-                         <img src="./Img/arrow.svg" class="questions_img" />
-                         </span>
-                    </h3>
-
-                    <p class="questions_show">
-                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                         Necessitatibus unde dolores soluta quos neque nisi accusantium.
-                         Dicta sit cum iure aliquid. Natus fuga optio, incidunt
-                         aspernatur eius nemo tempore ratione.Lorem ipsum dolor sit amet
-                         consectetur adipisicing elit. Necessitatibus unde dolores soluta
-                         quos neque nisi accusantium. Dicta sit cum iure aliquid. Natus
-                         fuga optio, incidunt aspernatur eius nemo tempore ratione.
-                    </p>
-                    </div>
-                    </article>
-
-                    <article class="questions_padding">
-                    <div class="questions_answer">
-                    <h3 class="questions_title">
-                         ¿Qué es el cancer de piel?
-                         <span class="questions_arrow">
-                         <img src="./Img/arrow.svg" class="questions_img" />
-                         </span>
-                    </h3>
-                    <p class="questions_show">
-                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                         Necessitatibus unde dolores soluta quos neque nisi accusantium.
-                         Dicta sit cum iure aliquid. Natus fuga optio, incidunt
-                         aspernatur eius nemo tempore ratione.Lorem ipsum dolor sit amet
-                         consectetur adipisicing elit. Necessitatibus unde dolores soluta
-                         quos neque nisi accusantium. Dicta sit cum iure aliquid. Natus
-                         fuga optio, incidunt aspernatur eius nemo tempore ratione.
-                    </p>
-                    </div>
-                    </article>
-               </section>
-
-               <section class="questions_offer">
-                    <h2 class="subtitle">
-                    ¿Estas listo para tu consulta con la Dermatóloga?
-                    </h2>
-                    <p class="questions_copy">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
-                    voluptas possimus laborum voluptatum facere. Consequatur suscipit id
-                    ipsam dolorum, molestiae alias, qui debitis sint delectus accusamus
-                    eaque vel, harum eius?
-                    </p>
-                    <a href="./pages/contact.html" class="buttons">Solicitá tu consulta</a>
-               </section>
-               </section>
-
-               <footer class="footer">
-                    <section class="footer_container container">
-                         <nav class=" nav--footer">
-                         <h2 class="footer_title">LOREM IPSUM</h2>
-
-                         <ul class="nav_link nav_link--footer">
-                         <li class="nav_items">
-                              <a href="#" class="nav_links">Inicio</a>
-                         </li>
-                         <li class="nav_items">
-                              <a href="#" class="nav_links">Acerca de</a>
-                         </li>
-                         <li class="nav_items">
-                              <a href="#" class="nav_links">Contacto</a>
-                         </li>
-                         </ul>
-                         </nav>
-
-                         <form class="footer_form">
-                         <h2 class="footer_newsletter">Suscribete a la newsletter</h2>
-                         <div class="footer_inputs">
-                         <input type="email" placeholder="Email:" class="footer_input" />
-                         <input type="submit" value="Registrate" class="footer_submit" />
-                         </div>
-                         </form>
                     </section>
-                    <section class="footer_copy container">
-                         <div class="footer_social">
-                         <a href="#" class="footer_icons"
-                         ><img
-                              src="./Img/icons8-facebook-nuevo.svg"
-                              alt=""
-                              class="footer_img"
-                         /></a>
-                         <a href="#" class="footer_icons"
-                         ><img
-                              src="./Img/icons8-facebook-nuevo.svg"
-                              alt=""
-                              class="footer_img"
-                         /></a>
-                         <a href="#" class="footer_icons"
-                         ><img
-                              src="./Img/icons8-facebook-nuevo.svg"
-                              alt=""
-                              class="footer_img"
-                         /></a>
+          <!-- Seccion Servicios -->
+                    <section class="service">
+                         <div class="service_container container">
+                              <div class="service_texts">
+                                   <h2 class="subtitle">Servicios</h2>
+                                   <p class="service_paragraph">Consulta espcializada</p>
+                                   <p class="service_paragraph">Evaluación interdisciplinaria</p>
+                                   <p class="service_paragraph">Dermatoscopía</p>
+                                   <p class="service_paragraph">Cirugía oncológica</p>
+                                   <p class="service_paragraph">Criocirugía</p>
+                                   <a href="" class="buttons">Mas info+</a>
+                              </div>
+                              <figure class="service_picture">
+                                   <img src="./Img/Fondo Service.jpg" alt="imagen servicios" class="service_img"/>
+                              </figure>
                          </div>
-                         <h3 class="footer_copyright">
-                         Derechos Reservados &copy; Dermatóloga
-                         </h3>
                     </section>
-               </footer>
-          </main>
-          <script src="./js/slider.js"></script>
-          <script src="./js/question.js"></script>
-          <script src="./js/menu.js"></script>
-     </body>
+                    <section class="types container">
+                         <h2 class="subtitle">Tipos de cancer más comunes</h2>
+                         <div class="types_table">
+                              <div class="types_element">
+                                   <p class="types_name">Carcinoma Basocelular</p>
+                                   <h3 class="types_info">+Más info</h3>
+
+                                   <div class="types_items">
+                                   <p class="types_features">lorem ipsum</p>
+                                   <p class="types_features">lorem ipsum</p>
+                                   <p class="types_features">lorem ipsum</p>
+                                   </div>
+
+                                   <a href="#" class="types_buttons">Solicitá una consulta</a>
+                              </div>
+
+                              <div class="types_element types_element--best">
+                                   <p class="types_name">Carcinoma espinocelular</p>
+                                   <h3 class="types_info">+Más info</h3>
+
+                                   <div class="types_items">
+                                        <p class="types_features">lorem ipsum</p>
+                                        <p class="types_features">lorem ipsum</p>
+                                        <p class="types_features">lorem ipsum</p>
+                                   </div>
+
+                                   <a href="#" class="types_buttons">Solicitá una consulta</a>
+                              </div>
+
+                              <div class="types_element">
+                                   <p class="types_name">Melanoma</p>
+                                   <h3 class="types_info">+Más info</h3>
+
+                                   <div class="types_items">
+                                        <p class="types_features">lorem ipsum</p>
+                                        <p class="types_features">lorem ipsum</p>
+                                        <p class="types_features">lorem ipsum</p>
+                                   </div>
+
+                                   <a href="#" class="types_buttons">Solicitá una consulta</a>
+                              </div>
+                         </div>
+                    </section>
+          <!-- Seccion Nosotros -->
+                    <section class="us" id="us">
+                         <div class="us_container container">
+                              <img src="./Img/leftarrow.svg" class="us_arrow" id="before" />
+                              <section class="us_body us_body--show" data-id="1">
+                                   <div class="us_texts">
+                                        <h2 class="subtitle">
+                                             Mi nombre es Micaela,
+                                             <span class="us_course">Médica Dermatóloga</span>
+                                        </h2>
+                                        <p class="us_review">
+                                             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                             Distinctio quos ipsam, iusto saepe praesentium nemo minima fuga
+                                             error magnam? Illum necessitatibus similique incidunt, impedit
+                                             veniam vitae totam? Perferendis, voluptatum placeat!
+                                        </p>
+                                   </div>
+                                   <figure class="us_picture">
+                                        <img src="./Img/face1.jpg" class="us_img" />
+                                   </figure>
+                              </section>
+                              <section class="us_body" data-id="2">
+                                   <div class="us_texts">
+                                        <h2 class="subtitle">
+                                             Mi nombre es Micaela,
+                                             <span class="us_course">Médica Dermatóloga</span>
+                                        </h2>
+                                        <p class="us_review">
+                                             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                             Distinctio quos ipsam, iusto saepe praesentium nemo minima fuga
+                                             error magnam? Illum necessitatibus similique incidunt, impedit
+                                             veniam vitae totam? Perferendis, voluptatum placeat!
+                                        </p>
+                                   </div>
+                                   <figure class="us_picture">
+                                        <img src="./Img/face2.jpg" class="us_img" />
+                                   </figure>
+                              </section>
+                              <section class="us_body" data-id="3">
+                                   <div class="us_texts">
+                                        <h2 class="subtitle">
+                                             Mi nombre es Micaela,
+                                             <span class="us_course">Médica Dermatóloga</span>
+                                        </h2>
+                                        <p class="us_review">
+                                             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                             Distinctio quos ipsam, iusto saepe praesentium nemo minima fuga
+                                             error magnam? Illum necessitatibus similique incidunt, impedit
+                                             veniam vitae totam? Perferendis, voluptatum placeat!
+                                        </p>
+                                   </div>
+                                   <figure class="us_picture">
+                                        <img src="./Img/face3.jpg" class="us_img" />
+                                   </figure>
+                              </section>
+                              <img src="./Img/rightarrow.svg" class="us_arrow" id="next" />
+                         </div>
+                    </section>
+          <!-- Seccion Preguntas Frecuentes -->
+                    <section class="questions container" id="questions">
+                         <h2 class="subtitle">Preguntas Frecuentes</h2>
+                         <p class="questions_paragraph">
+                              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis
+                              sint non excepturi ratione officiis repellat, voluptatum vitae aliquid
+                              cumque libero sed voluptates nihil obcaecati dolor, eos, amet
+                              accusamus. Numquam, nulla?
+                         </p>
+                         <section class="questions_container">
+                              <article class="questions_padding">
+                                   <div class="questions_answer">
+                                        <h3 class="questions_title">
+                                             ¿Qué es el cancer de piel?
+                                             <span class="questions_arrow">
+                                             <img src="./Img/arrow.svg" class="questions_img" />
+                                             </span>
+                                        </h3>
+                                        <p class="questions_show">
+                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                             Necessitatibus unde dolores soluta quos neque nisi accusantium.
+                                             Dicta sit cum iure aliquid. Natus fuga optio, incidunt
+                                             aspernatur eius nemo tempore ratione.Lorem ipsum dolor sit amet
+                                             consectetur adipisicing elit. Necessitatibus unde dolores soluta
+                                             quos neque nisi accusantium. Dicta sit cum iure aliquid. Natus
+                                             fuga optio, incidunt aspernatur eius nemo tempore ratione.
+                                        </p>
+                                   </div>
+                              </article>
+                              <article class="questions_padding">
+                                   <div class="questions_answer">
+                                        <h3 class="questions_title">
+                                             ¿Qué es el cancer de piel?
+                                             <span class="questions_arrow">
+                                             <img src="./Img/arrow.svg" class="questions_img" />
+                                             </span>
+                                        </h3>
+                                        <p class="questions_show">
+                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                             Necessitatibus unde dolores soluta quos neque nisi accusantium.
+                                             Dicta sit cum iure aliquid. Natus fuga optio, incidunt
+                                             aspernatur eius nemo tempore ratione.Lorem ipsum dolor sit amet
+                                             consectetur adipisicing elit. Necessitatibus unde dolores soluta
+                                             quos neque nisi accusantium. Dicta sit cum iure aliquid. Natus
+                                             fuga optio, incidunt aspernatur eius nemo tempore ratione.
+                                        </p>
+                                   </div>
+                              </article>
+                              <article class="questions_padding">
+                              <div class="questions_answer">
+                                   <h3 class="questions_title">
+                                        ¿Qué es el cancer de piel?
+                                        <span class="questions_arrow">
+                                        <img src="./Img/arrow.svg" class="questions_img" />
+                                        </span>
+                                   </h3>
+                                   <p class="questions_show">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Necessitatibus unde dolores soluta quos neque nisi accusantium.
+                                        Dicta sit cum iure aliquid. Natus fuga optio, incidunt
+                                        aspernatur eius nemo tempore ratione.Lorem ipsum dolor sit amet
+                                        consectetur adipisicing elit. Necessitatibus unde dolores soluta
+                                        quos neque nisi accusantium. Dicta sit cum iure aliquid. Natus
+                                        fuga optio, incidunt aspernatur eius nemo tempore ratione.
+                                   </p>
+                              </div>
+                              </article>
+                         </section>
+                         <section class="questions_offer">
+                              <h2 class="subtitle">¿Estas listo para tu consulta con la Dermatóloga?</h2>
+                              <p class="questions_copy">
+                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+                                   voluptas possimus laborum voluptatum facere. Consequatur suscipit id
+                                   ipsam dolorum, molestiae alias, qui debitis sint delectus accusamus
+                                   eaque vel, harum eius?
+                              </p>
+                              <a href="./pages/contact.html" class="buttons">Solicitá tu turno &gt; </a>
+                         </section>
+                    </section>
+          <!-- Seccion Footer -->
+                    <footer class="footer">
+                         <section class="footer_container container">
+                              <nav class="nav--footer">
+                                   <h2 class="footer_title">LOREM IPSUM</h2>
+
+                                   <ul class="nav_link nav_link--footer">
+                                        <li class="nav_items">
+                                             <a href="#" class="nav_links">Inicio</a>
+                                        </li>
+                                        <li class="nav_items">
+                                             <a href="#" class="nav_links">Acerca de</a>
+                                        </li>
+                                        <li class="nav_items">
+                                             <a href="#" class="nav_links">Contacto</a>
+                                        </li>
+                                   </ul>
+                              </nav>
+                              <form class="footer_form">
+                                   <h2 class="footer_newsletter">Suscribete a la newsletter</h2>
+                                   <div class="footer_inputs">
+                                        <input type="email" placeholder="Email:" class="footer_input" />
+                                        <input type="submit" value="Registrate" class="footer_submit" />
+                                   </div>
+                              </form>
+                         </section>
+                         <section class="footer_copy container">
+                              <div class="footer_social">
+                              <a href="#" class="footer_icons"
+                              ><img
+                                   src="./Img/icons8-facebook-nuevo.svg"
+                                   alt=""
+                                   class="footer_img"
+                              /></a>
+                              <a href="#" class="footer_icons"
+                              ><img
+                                   src="./Img/icons8-facebook-nuevo.svg"
+                                   alt=""
+                                   class="footer_img"
+                              /></a>
+                              <a href="#" class="footer_icons"
+                              ><img
+                                   src="./Img/icons8-facebook-nuevo.svg"
+                                   alt=""
+                                   class="footer_img"
+                              /></a>
+                              </div>
+                              <h3 class="footer_copyright">
+                              Derechos Reservados &copy; Dermatóloga
+                              </h3>
+                         </section>
+                    </footer>
+               </main>
+               <script src="./js/slider.js"></script>
+               <script src="./js/question.js"></script>
+               <script src="./js/menu.js"></script>
+               <script src="./js/scroll.js"></script>
+          </body>
      </html>
-
