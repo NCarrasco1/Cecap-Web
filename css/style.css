@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.body{
+    font-family: 'Roboto', sans-serif;
+    color: #706f6f; /* Color base para toda la página */
+}
 
 .html{
     scroll-behavior: smooth;
-}
-.body {
-    font-family: 'Poppins', sans-serif;
 }
 
 :root {
@@ -232,43 +234,75 @@
 
 .goals {
     text-align: center;
+    background-color: #fbb77812;
 }
 
 .subtitle {
     color: var(--color-title);
     font-size: 2rem;
     margin-bottom: 25px;
+    font-weight: 600;
+    margin-top: 10px;
 }
 
 .goals_paragraph {
-    line-height: 1.7;
+    line-height: 1.6; /* Buen espaciado de líneas */
+    font-size: 18px; /* Reducir un poco */
+    font-weight: 400;
+    text-align: justify;
+    text-justify: inter-word;
+    max-width: 900px;
+    margin: 0 auto 20px auto; /* Reducir margen inferior de 40px a 20px */
+    hyphens: auto;
 }
 
 .goals__paragrah {
-    font-size: 18px;
+    line-height: 1.5;
+    font-size: 15px;
+    font-weight: 400;
 }
 
 .goals_main {
     padding-top: 80px;
+    padding-bottom: 60px;
     display: grid;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
-    gap: 1em;
+    gap: 5em;
     overflow: hidden;
-    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 
 .goals_icons {
+    background: rgba(217, 217, 217, 0.124);
+    box-sizing: border-box;
+    border-radius: 15px;
     display: grid;
     gap: 1em;
     justify-items: center;
-    width: 260px;
-    overflow: hidden;
+    width: 100%;
     margin: 0 auto;
+    align-content: start;
+    padding: 30px 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: visible;
 }
 
+.goals_icons:hover {
+    transform: translateY(-50px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
 .goals_icon {
-    width: 40px;
+    width: 60px; /* Aumentar el tamaño */
+    background-color: #fbb77874;
+    height: 60px;
+    padding: 8px; /* Espacio entre el ícono y el borde */
+    border:  solid #545454; /* Borde sólido */
+    border-radius: 30%; /* Hacer circular */
+    transition: all 0.3s ease;
+    object-fit: contain; /* Mantener proporción del ícono */
 }
 
 /* Service */

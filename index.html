@@ -34,29 +34,30 @@
           </head>
 <!-- Seccion nav -->
           <body class="body">
-               <header class="headercont">
+               <header class="headercont" id="inicio">
                     <nav class="nav">
                          <button class="nav_burger" aria-label="Abrir menú">
                               <img src="./Img/menu.png" alt="menu hamburguesa" class="burger_img" />
                          </button>
                          <div class="nav_logo">
-                              <!-- <h1>CECAP</h1> -->
-                              <img src="./Img/Cecap con fondo (2).svg" alt="Logo" />
+                              <a href="#inicio">
+                                   <img src="./Img/Cecap con fondo (2).svg" alt="Logo"/>
+                              </a>
                          </div>
 
                          <!-- MENÚ LATERAL CON LOS ENLACES -->
                          <ul class="nav_link" id="nav">
                               <li class="nav_items">
-                                   <a href="./index.html" class="nav_links">Inicio</a>
+                                   <a href="#inicio" class="nav_links">Inicio</a>
                               </li>
                               <li class="nav_items">
                                    <a href="#goals" class="nav_links">Objetivos</a>
                               </li>
                               <li class="nav_items">
-                                   <a href="#" class="nav_links">Servicios</a>
+                                   <a href="#services" class="nav_links">Servicios</a>
                               </li>
                               <li class="nav_items">
-                                   <a href="#" class="nav_links">Tipos de Cáncer</a>
+                                   <a href="#types" class="nav_links">Tipos de Cáncer</a>
                               </li>
                               <li class="nav_items">
                                    <a href="#us" class="nav_links">Nosotros</a>
@@ -83,43 +84,42 @@
 <!-- Seccion Objetivos  -->
                <main>
                     <section class="container goals" id="goals">
-                    <h2 class="subtitle">Nuestros Objetivos</h2>
+                    <h2 class="subtitle">Nuestra Misión</h2>
                     <p class="goals_paragraph">
-                         Somos un centro especializado en cancer de piel. Conformado por
-                         profesionales altamente capacitados con objetivos en:
+                         En <strong>CECAP</strong> trabajamos con un único propósito: <strong>proteger tu salud y cuidar de tu piel</strong>. Somos un centro conformado por <strong>médicas especialistas</strong> en <strong>dermatooncología y cirugía dermatológica</strong>, altamente capacitadas y comprometidas con la <strong>prevención, diagnóstico, tratamiento y seguimiento integral del cáncer de piel.</strong>
+                         Ofrecemos una atención personalizada, combinando tecnología de última generación con un enfoque humano y cercano, para brindarte resultados precisos y tratamientos efectivos.
+                         <strong>Nuestro objetivo</strong> es detectar de forma temprana cualquier lesión sospechosa, aplicar terapias adaptadas a cada paciente y acompañarte en todo el proceso de recuperación y control, garantizando tu bienestar a largo plazo.
+                         En <strong>CECAP</strong> creemos que la prevención salva vidas. Por eso, estamos aquí para ayudarte a cuidar la salud de tu piel hoy, para que disfrutes del mañana con tranquilidad.
                     </p>
 
                     <div class="goals_main">
                          <article class="goals_icons">
-                              <img src="./Img/shapes.svg" alt="" class="goals_icon" />
+                              <img src="./Img/dermatologia.png" alt="" class="goals_icon" />
                               <h3 class="goals_title">Prevención y diagnostico</h3>
                               <p class="goals__paragrah">
-                              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
-                              tempore porro eius facilis?
+                              Realizamos controles dermatológicos completos para detectar a tiempo lesiones sospechosas o precancerosas.Utilizamos equipos de dermatoscopia digital de alta precisión y evaluaciones clínicas personalizadas para brindarte un diagnóstico confiable y oportuno.
                               </p>
                          </article>
 
                          <article class="goals_icons">
-                              <img src="./Img/shapes.svg" alt="" class="goals_icon" />
+                              <img src="./Img/scalpel.png" alt="" class="goals_icon" />
                               <h3 class="goals_title">Tratamiento</h3>
                               <p class="goals__paragrah">
-                              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
-                              tempore porro eius facilis?
+                              Ofrecemos tratamientos personalizados y mínimamente invasivos, utilizando tecnología de vanguardia para garantizar la máxima eficacia y seguridad. Nuestro equipo de especialistas está comprometido con tu bienestar y se asegurará de que recibas la atención adecuada en cada etapa del proceso.
                               </p>
                          </article>
 
                          <article class="goals_icons">
-                              <img src="./Img/shapes.svg" alt="" class="goals_icon" />
+                              <img src="./Img/Seguimiento.png" alt="" class="goals_icon" />
                               <h3 class="goals_title">Seguimiento</h3>
                               <p class="goals__paragrah">
-                              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
-                              tempore porro eius facilis?
+                              Acompañamos a cada paciente con controles periódicos y planes de seguimiento individualizados. Nuestro compromiso es prevenir recaídas, detectar nuevas lesiones a tiempo y garantizar tu bienestar a largo plazo.
                               </p>
                          </article>
                     </div>
                     </section>
           <!-- Seccion Servicios -->
-                    <section class="service">
+                    <section class="service" id="services">
                          <div class="service_container container">
                               <div class="service_texts">
                                    <h2 class="subtitle">Servicios</h2>
@@ -135,7 +135,8 @@
                               </figure>
                          </div>
                     </section>
-                    <section class="types container">
+          <!-- Seccion Tipos de cancer -->
+                    <section class="types container" id="types">
                          <h2 class="subtitle">Tipos de cancer más comunes</h2>
                          <div class="types_table">
                               <div class="types_element">
