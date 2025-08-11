@@ -11,7 +11,7 @@
 
 :root {
     --padding-container: 100px 0;
-    --color-title: #001a49
+    --color-title: #001a499e;
 }
 
 
@@ -42,7 +42,7 @@
 /* Button for all */
 
 .buttons {
-    display: inline-block; 
+    display: inline-block;
     background-color: #fbb878;
     justify-self: center;
     color: #000000;
@@ -234,7 +234,7 @@
 
 .goals {
     text-align: center;
-    background-color: #fbb77812;
+    background-color: #ff7b0025;
 }
 
 .subtitle {
@@ -263,19 +263,19 @@
 }
 
 .goals_main {
-    padding-top: 80px;
+    padding-top: 130px;
     padding-bottom: 60px;
     display: grid;
     width: 100%;
     margin: 0 auto;
     gap: 5em;
-    overflow: hidden;
+    overflow: visible;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 
 .goals_icons {
-    background: rgba(217, 217, 217, 0.124);
-    box-sizing: border-box;
+    /* background: rgba(219, 172, 15, 0.124); */
+    /* box-sizing: border-box; */
     border-radius: 15px;
     display: grid;
     gap: 1em;
@@ -284,22 +284,23 @@
     margin: 0 auto;
     align-content: start;
     padding: 30px 20px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    /* box-shadow: 0 5px 20px rgba(0,0,0,0.08); */
     transition: all 0.3s ease;
     position: relative;
     overflow: visible;
 }
 
+
 .goals_icons:hover {
     transform: translateY(-50px);
-    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    /* box-shadow: 0 15px 40px rgba(255, 103, 1, 0.171); */
 }
 .goals_icon {
     width: 60px; /* Aumentar el tamaño */
-    background-color: #fbb77874;
+    background-color: #ff700a13;
     height: 60px;
     padding: 8px; /* Espacio entre el ícono y el borde */
-    border:  solid #545454; /* Borde sólido */
+    border:  1px solid #545454; /* Borde sólido */
     border-radius: 30%; /* Hacer circular */
     transition: all 0.3s ease;
     object-fit: contain; /* Mantener proporción del ícono */
