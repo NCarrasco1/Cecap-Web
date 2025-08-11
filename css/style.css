@@ -42,7 +42,7 @@
 /* Button for all */
 
 .buttons {
-    display: inline-block;
+    display: inline-block; 
     background-color: #fbb878;
     justify-self: center;
     color: #000000;
