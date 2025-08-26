@@ -13,6 +13,17 @@
                     name="title"
                     content="CECAP - Centro Especializado en Cancer de Piel"
                />
+               <!-- Título y descripción -->
+                    <meta property="og:title" content="Cecap-Web" />
+                    <meta property="og:description" content="Proyecto final de la Tecnicatura en Programación - Sitio web desarrollado con HTML, CSS y JavaScript." />
+                    <meta property="og:type" content="website" />
+                    <meta property="og:url" content="https://ncarrasco1.github.io/Cecap-Web/" />
+
+                    <!-- Imagen de vista previa (subila a tu repo en /assets o similar) -->
+                    <meta property="og:image" content="https://ncarrasco1.github.io/Cecap-Web/Img/preview.png" />
+                    <meta property="og:image:type" content="image/png" />
+                    <meta property="og:image:width" content="1200" />
+                    <meta property="og:image:height" content="630" />
                <meta
                     name="description"
                     content="Centro especializado en cancer de piel, con dermatologas especialistas en la prevencion, diagnostico y tratamiento del cancer de piel."
@@ -120,69 +131,90 @@
                          </div>
                          </section>
                     </div>
-          <!-- Seccion Servicios -->
-                    <section class="service" id="services">
-                         <div class="service_container container">
-                              <div class="service_texts">
-                                   <h2 class="subtitle">Servicios</h2>
-                                   <p class="service_paragraph">Consulta espcializada</p>
-                                   <p class="service_paragraph">Evaluación interdisciplinaria</p>
-                                   <p class="service_paragraph">Dermatoscopía</p>
-                                   <p class="service_paragraph">Cirugía oncológica</p>
-                                   <p class="service_paragraph">Criocirugía</p>
-                                   <a href="" class="buttons">Mas info+</a>
-                              </div>
-                              <figure class="service_picture">
-                                   <img src="./Img/Fondo Service.jpg" alt="imagen servicios" class="service_img"/>
-                              </figure>
+<!-- Seccion Servicios -->
+     <section class="service" id="services">
+          <div class="service_container container">
+               <div class="service_texts">
+                    <h2 class="subtitle">Nuestras Especialidades</h2>
+                    <p class="service_paragraph">
+                         Conoce los diferentes servicios que ofrecemos en CECAP
+                    </p>
+               </div>
+               <!-- Carrusel de imágenes -->
+               <div class="image-carousel">
+                    <div class="carousel-images">
+                         <div class="carousel-slide active" data-slide="0">
+                              <img src="./Img/Fondo Service.jpg" alt="Dermatoscopia Digital" />
                          </div>
-                    </section>
-          <!-- Seccion Tipos de cancer -->
+                         <div class="carousel-slide" data-slide="1">
+                              <img src="./Img/Fondo Service.jpg" alt="Cirugía Dermatológica" />
+                         </div>
+                         <div class="carousel-slide" data-slide="2">
+                              <img src="./Img/Fondo Service.jpg" alt="Control Preventivo" />
+                         </div>
+                    </div>
+                    <div class="carousel-content">
+                         <div class="service-info active" data-info="0">
+                              <h3>Dermatoscopia Digital</h3>
+                              <p>Tecnología de última generación para el diagnóstico preciso de lesiones cutáneas</p>
+                         </div>
+                         <div class="service-info" data-info="1">
+                              <h3>Cirugía Dermatológica</h3>
+                              <p>Procedimientos mínimamente invasivos realizados por especialistas certificados</p>
+                         </div>
+                         <div class="service-info" data-info="2">
+                              <h3>Control Preventivo</h3>
+                              <p>Evaluaciones completas para la detección temprana de cáncer de piel</p>
+                         </div>
+                    </div>
+               </div>
+               <div class="carousel-navigation">
+                    <button class="carousel-btn prev" id="prevBtn">&lt;</button>
+                    <button class="carousel-btn next" id="nextBtn">&gt;</button>
+               </div>
+          </div>
+     </section>
+<!-- Seccion Tipos de cancer -->
                     <section class="types container" id="types">
                          <h2 class="subtitle">Tipos de cancer más comunes</h2>
                          <div class="types_table">
                               <div class="types_element">
                                    <p class="types_name">Carcinoma Basocelular</p>
-                                   <h3 class="types_info">+Más info</h3>
-
                                    <div class="types_items">
-                                   <p class="types_features">lorem ipsum</p>
-                                   <p class="types_features">lorem ipsum</p>
-                                   <p class="types_features">lorem ipsum</p>
+                                        <p class="types_features">El carcinoma basocelular es el tipo más común de cáncer de piel, que se origina en las células basales de la epidermis y se caracteriza por la aparición de bultos, protuberancias o llagas en la piel expuesta al sol</p>
+                                        <div>
+                                             <img class="types_img-1" src="./Img/carcinoma-basocelular.jpg" alt="Carcinoma Basocelular">
+                                        </div>
                                    </div>
-
                                    <a href="#" class="types_buttons">Solicitá una consulta</a>
                               </div>
-
                               <div class="types_element types_element--best">
                                    <p class="types_name">Carcinoma espinocelular</p>
-                                   <h3 class="types_info">+Más info</h3>
-
                                    <div class="types_items">
-                                        <p class="types_features">lorem ipsum</p>
-                                        <p class="types_features">lorem ipsum</p>
-                                        <p class="types_features">lorem ipsum</p>
+                                        <p class="types_features">El carcinoma espinocelular es el segundo tipo más común de cáncer de piel, que se origina en las células escamosas de la epidermis y puede aparecer como una protuberancia roja o una herida que no cicatriza.</p>
+                                        <div>
+                                             <img class="types_img-2" src="./Img/carcinoma-espinocelular.jpg" alt="Carcinoma espinocelular">
+                                        </div>
                                    </div>
-
                                    <a href="#" class="types_buttons">Solicitá una consulta</a>
                               </div>
-
                               <div class="types_element">
                                    <p class="types_name">Melanoma</p>
-                                   <h3 class="types_info">+Más info</h3>
-
                                    <div class="types_items">
-                                        <p class="types_features">lorem ipsum</p>
-                                        <p class="types_features">lorem ipsum</p>
-                                        <p class="types_features">lorem ipsum</p>
+                                        <p class="types_features">El melanoma es el tipo más peligroso de cáncer de piel, que se origina en los melanocitos y puede aparecer como un lunar nuevo o un cambio en un lunar existente.</p>
+                                        <div>
+                                             <img class="types_img-3" src="./Img/Melanoma.jpg" alt="Melanoma">
+                                        </div>
                                    </div>
-
                                    <a href="#" class="types_buttons">Solicitá una consulta</a>
                               </div>
                          </div>
                     </section>
           <!-- Seccion Nosotros -->
                     <section class="us" id="us">
+                         <div class="service_texts">
+                              <h2 class="subtitle">Equipo Medico</h2>
+                         </div>
                          <div class="us_container container">
                               <img src="./Img/leftarrow.svg" class="us_arrow" id="before" />
                               <section class="us_body us_body--show" data-id="1">
@@ -371,6 +403,7 @@
                          </section>
                     </footer>
                </main>
+               <script src="./js/carusel.js"></script>
                <script src="./js/slider.js"></script>
                <script src="./js/question.js"></script>
                <script src="./js/menu.js"></script>
