@@ -18,8 +18,7 @@
 .goals,
 .types,
 #us,
-#questions,
-.footer {
+#questions {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -598,13 +597,14 @@
 }
 
 .us_texts {
+    font-size: 20px;
     max-width: 700px;
 }
 
 .us_course {
-    background-color: royalblue;
+    background-color: rgb(162, 177, 223);
     color: #fff;
-    display: inline-block;
+    display:inline-block;
     padding: 5px;
     border-radius: 5px;
 }
@@ -624,16 +624,27 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Cambiar de center a flex-start */
-    align-items: center; /* Mantener centrado horizontalmente */
-    padding: 120px 20px 100px; /* Más padding-bottom para el botón */
+    justify-content: center; /* Volver a centrar */
+    align-items: center;
+    padding: 80px 20px 60px; /* Reducir padding superior e inferior */
+}
+
+.questions_paragraph {
+    line-height: 1.4; /* Reducir line-height */
+    font-size: 16px; /* Reducir tamaño de fuente */
+    font-weight: 400;
+    text-align: center; /* Centrar en lugar de justify */
+    max-width: 800px; /* Reducir ancho máximo */
+    margin: 0 auto 30px auto; /* Reducir margen inferior */
 }
 
 .questions_container {
     display: grid;
-    gap: 2em;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    gap: 1em; /* Reducir gap de 2em a 1em */
+    padding-top: 20px; /* Reducir padding superior */
+    padding-bottom: 15px; /* Reducir padding inferior */
+    max-width: 900px; /* Limitar ancho */
+    width: 100%;
 }
 
 .questions_padding {
@@ -644,22 +655,22 @@
 }
 
 .questions_padding--add {
-    padding-bottom: 30px;
+    padding-bottom: 20px; /* Reducir de 30px a 20px */
 }
 
 .questions_answer {
-    padding: 0 30px 0;
-
+    padding: 0 25px 0; /* Reducir padding horizontal */
 }
 
 .questions_title {
     display: flex;
     text-align: left;
-    font-size: 20px;
-    padding: 30px 0 30px;
+    font-size: 18px; /* Reducir de 20px a 18px */
+    padding: 20px 0 20px; /* Reducir padding vertical */
     cursor: pointer;
     color: var(--color-title);
     justify-content: space-between;
+    line-height: 1.3; /* Añadir line-height compacto */
 }
 
 .questions_show {
@@ -667,33 +678,46 @@
     text-align: left;
     height: 0;
     transition: height .3s;
+    font-size: 14px; /* Reducir tamaño del texto de respuesta */
+    line-height: 1.4; /* Line-height compacto */
 }
 
 .questions_arrow {
     border-radius: 50%;
     background-color: var(--color-title);
-    width: 25px;
-    height: 25px;
+    width: 20px; /* Reducir de 25px a 20px */
+    height: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     align-self: flex-end;
     margin-left: 10px;
     transition: transform .3s;
+    flex-shrink: 0; /* Evitar que se encoja */
 }
 
-.questions_arrow--rotate {
-    transform: rotate(180deg);
+/* Sección final más compacta */
+.questions_offer {
+    margin-top: 30px; /* Reducir margen superior */
+    text-align: center;
 }
 
-.questions_img {
-    display: block;
+.questions_offer .subtitle {
+    font-size: 2rem; /* Reducir tamaño del título final */
+    margin-bottom: 15px; /* Reducir margen */
 }
 
 .questions_copy {
-    width: 60%;
+    width: 80%; /* Aumentar ancho para usar mejor el espacio */
     margin: 0 auto;
-    margin-bottom: 30px;
+    margin-bottom: 20px; /* Reducir margen inferior */
+    font-size: 15px; /* Reducir tamaño de fuente */
+    line-height: 1.4; /* Line-height compacto */
+}
+
+.questions .buttons {
+    padding: 10px 20px; /* Reducir padding del botón */
+    font-size: 14px; /* Reducir tamaño de fuente del botón */
 }
 
 /* Footer  */
@@ -702,6 +726,10 @@
     background-color: #1D293F;
 }
 
+.logo_footer{
+    width: 100px;
+    height: auto;
+}
 
 .footer_title {
     font-weight: 300;
@@ -719,7 +747,7 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #fff;
-    padding-bottom: 60px;
+    padding-bottom: 10px;
 }
 
 .nav--footer {
@@ -794,10 +822,10 @@
     }
 }
 
-@media (max-width:800px) {
-
+/* ===== TABLET (800px y menos) ===== */
+@media (max-width: 800px) {
+    
     /* Nav */
-
     .nav_burger {
         display: block;
     }
@@ -806,7 +834,6 @@
         padding-left: 0 !important;
         padding-right: 0 !important;
     }
-
 
     .nav_link.nav_link--show {
         transform: translateX(0);
@@ -828,10 +855,12 @@
         border-bottom: 1px solid #eee;
     }
 
+    /* Header */
     .header_title {
         font-size: 2.5rem;
     }
 
+    /* Goals */
     .goals_main {
         gap: 2.5rem;
     }
@@ -840,7 +869,35 @@
         grid-column: 1/-1;
     }
 
-    /* sevices */
+    /* Service / Carousel */
+    .service {
+        padding: 60px 20px 50px;
+    }
+
+    .service_container {
+        gap: 3em;
+    }
+
+    .image-carousel {
+        grid-template-columns: 1fr;
+        gap: 3em;
+        text-align: center;
+    }
+
+    .carousel-images {
+        height: 350px;
+        order: 1; /* Imagen primero */
+    }
+
+    .carousel-content {
+        height: auto;
+        order: 2; /* Contenido después */
+    }
+
+    .carousel-navigation {
+        margin-top: 2em;
+        justify-content: center;
+    }
 
     .service_container {
         grid-template-columns: 1fr;
@@ -854,8 +911,7 @@
         justify-self: center;
     }
 
-    /* us  */
-
+    /* Us */
     .us_container {
         grid-template-columns: 30px 1fr 30px;
         text-align: center;
@@ -873,14 +929,31 @@
         height: 300px;
     }
 
-    /* questions  */
-
+    /* Questions */
+    .questions {
+        padding: 60px 20px 40px;
+    }
+    
+    .questions_container {
+        gap: 0.8em;
+        padding-top: 15px;
+    }
+    
+    .questions_title {
+        font-size: 16px;
+        padding: 15px 0;
+    }
+    
+    .questions_show {
+        font-size: 13px;
+    }
+    
     .questions_copy {
-        width: 100%;
+        width: 95%;
+        font-size: 14px;
     }
 
-    /* footer  */
-
+    /* Footer */
     .footer_container {
         flex-wrap: wrap;
     }
@@ -903,15 +976,21 @@
     .footer_input {
         flex: 1;
     }
-
 }
 
-
-/* Responsive: en móviles permitir más flexibilidad */
+/* ===== MÓVIL GRANDE (768px y menos) ===== */
 @media (max-width: 768px) {
+    
+    /* General */
     section {
         min-height: 80vh; /* Menos rígido en móviles */
     }
+
+    /* Service / Carousel */
+    .service {
+        padding: 80px 20px 50px;
+    }
+
     .image-carousel {
         grid-template-columns: 1fr;
         gap: 3em;
@@ -928,10 +1007,22 @@
     .service-info p {
         font-size: 1rem;
     }
+
+    .carousel-btn {
+        font-size: 1.4rem;
+        padding: 0.4em;
+    }
+
+    .carousel-navigation {
+        margin-top: 2em;
+        gap: 1.5em;
+    }
 }
 
-
-@media (max-width:600px) {
+/* ===== MÓVIL PEQUEÑO (600px y menos) ===== */
+@media (max-width: 600px) {
+    
+    /* Header */
     .header_title {
         font-size: 2rem;
     }
@@ -940,10 +1031,25 @@
         font-size: 1rem;
     }
 
+    /* General */
     .subtitle {
         font-size: 1.8rem;
     }
 
+    /* Service / Carousel */
+    .service {
+        padding: 60px 20px 40px;
+    }
+
+    .service_container {
+        gap: 2.5em;
+    }
+
+    .carousel-images {
+        height: 280px;
+    }
+
+    /* Types */
     .types_element {
         width: 70%;
     }
@@ -956,6 +1062,7 @@
         font-size: 2rem;
     }
 
+    /* Us */
     .us {
         --padding-container: 60px 0;
     }
@@ -967,17 +1074,52 @@
 
     .us_arrow {
         width: 100%;
-        ;
     }
 
     .us_course {
         margin-top: 15px;
     }
 
+    /* Questions */
+    .questions {
+        padding: 40px 20px 30px;
+    }
+    
+    .questions_paragraph {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    
+    .questions_container {
+        gap: 0.5em;
+        padding-top: 10px;
+    }
+    
     .questions_title {
-        font-size: 1rem;
+        font-size: 14px;
+        padding: 12px 0;
+    }
+    
+    .questions_show {
+        font-size: 12px;
+    }
+    
+    .questions_offer .subtitle {
+        font-size: 1.5rem;
+    }
+    
+    .questions_copy {
+        width: 100%;
+        font-size: 13px;
+        margin-bottom: 15px;
     }
 
+    .questions .buttons {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+
+    /* Footer */
     .footer_title {
         justify-self: start;
         margin-bottom: 15px;
@@ -1008,5 +1150,124 @@
 
     .footer_copyright {
         font-size: 1rem;
+    }
+}
+
+/* ===== MÓVIL MUY PEQUEÑO (480px y menos) ===== */
+@media (max-width: 480px) {
+    
+    /* Header */
+    .header_title {
+        font-size: 1.8rem;
+    }
+
+    .header_frase {
+        font-size: 1.1rem;
+    }
+
+    /* Service / Carousel */
+    .service {
+        padding: 50px 15px 30px;
+    }
+
+    .carousel-images {
+        height: 250px;
+    }
+
+    .service_paragraph {
+        font-size: 16px;
+    }
+
+    /* Goals */
+    .goals_paragraph {
+        font-size: 16px;
+    }
+
+    /* Questions */
+    .questions {
+        padding: 30px 15px 20px;
+    }
+
+    .questions_title {
+        font-size: 13px;
+    }
+
+    .questions_show {
+        font-size: 11px;
+    }
+
+    /* Types */
+    .types_element,
+    .types_element--best {
+        width: 90%;
+        padding: 30px 20px;
+    }
+
+    /* Us */
+    .us_img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+/* Media queries actualizadas para questions */
+
+@media (max-width: 800px) {
+    .questions {
+        padding: 60px 20px 40px; /* Aún más compacto en tablet */
+    }
+    
+    .questions_container {
+        gap: 0.8em;
+        padding-top: 15px;
+    }
+    
+    .questions_title {
+        font-size: 16px;
+        padding: 15px 0;
+    }
+    
+    .questions_show {
+        font-size: 13px;
+    }
+    
+    .questions_copy {
+        width: 95%;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 600px) {
+    .questions {
+        padding: 40px 20px 30px; /* Muy compacto en móviles */
+    }
+    
+    .questions_paragraph {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    
+    .questions_container {
+        gap: 0.5em;
+        padding-top: 10px;
+    }
+    
+    .questions_title {
+        font-size: 14px; /* Ya estaba, mantener */
+        padding: 12px 0;
+    }
+    
+    .questions_show {
+        font-size: 12px;
+    }
+    
+    .questions_offer .subtitle {
+        font-size: 1.5rem;
+    }
+    
+    .questions_copy {
+        width: 100%;
+        font-size: 13px;
+        margin-bottom: 15px;
     }
 }

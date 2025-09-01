@@ -4,7 +4,6 @@ html, body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    background-image: url('../Img/hjt_4.jpg') ;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -26,12 +25,12 @@ body {
     margin-top: 10% !important;
     margin-bottom: 5% !important;
     text-align: center;
-    background: rgba(10, 126, 241, 0.8);
+    background: rgba(171, 206, 241, 0.301);
     padding: 20px 15px;
     border-radius: 16px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     width: 80% !important;
-    max-width: 350px !important; /* Ahora es más angosto y elegante */
+    max-width: 550px !important; /* Ancho del formulario */
     margin-left: auto;
     margin-right: auto;
     animation: fadeInUp 1s ease;
@@ -81,44 +80,53 @@ body {
 
 /* Inputs */
 .form-control {
-    width: 100%;
-    max-width: 100%;
-    margin: 10px 0;
-    padding: 10px;
+    width: 85%; /* Cambiado de 50% a 85% - más ancho pero no todo el formulario */
+    max-width: 450px; /* Añadido límite máximo */
+    margin: 10px auto; /* Centrado automático */
+    padding: 12px 15px; /* Aumentado el padding para mejor apariencia */
     border: 2px solid #3498db;
     border-radius: 8px;
     outline: none;
     transition: all 0.3s ease;
     background-color: rgba(255, 255, 255, 0.9);
     color: #333;
-    font-size: 14px; /* Tamaño de texto más compacto */
+    font-size: 15px; /* Aumentado ligeramente el tamaño de fuente */
+    display: block; /* Para que el margin auto funcione */
 }
 
-
-.form-control:focus {
-    border-color: #e67e22;
-    box-shadow: 0 0 10px #e67e22;
+/* Labels */
+.form-label {
+    display: block;
+    text-align: center;
+    margin-bottom: 8px;
+    margin-left: 7.5%; /* Alineado con los inputs (100% - 85%) / 2 */
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
 }
 
 /* Textarea */
 textarea.form-control {
-    resize: none;
+    resize: vertical; /* Permitir redimensionar verticalmente */
+    min-height: 100px; /* Altura mínima */
 }
 
 /* Submit Button */
 button[type="submit"] {
-    background-color: #3498db;
+    background-color: #3498db36;
     color: white;
     border: none;
-    padding: 10px 16px;
+    padding: 12px 24px; /* Aumentado el padding */
     border-radius: 8px;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 15px; /* Aumentado el tamaño de fuente */
+    font-weight: 600;
+    margin-top: 15px;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 button[type="submit"]:hover {
-    background-color: #e67e22;
+    background-color: #e67d2250;
     transform: scale(1.05);
 }
 
@@ -209,6 +217,17 @@ button[type="submit"]:hover {
     .whatsapp-button i {
         font-size: 24px;
     }
+    
+    .form-control {
+        width: 90%; /* Más ancho en tablets */
+        margin: 8px auto;
+        padding: 10px 12px;
+    }
+    
+    .form-label {
+        margin-left: 5%; /* Ajustado para tablets */
+        font-size: 15px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -233,5 +252,22 @@ button[type="submit"]:hover {
 
     .whatsapp-button i {
         font-size: 20px;
+    }
+    
+    .form-control {
+        width: 95%; /* Casi todo el ancho en móviles */
+        margin: 8px auto;
+        padding: 10px;
+        font-size: 14px;
+    }
+    
+    .form-label {
+        margin-left: 2.5%; /* Ajustado para móviles */
+        font-size: 14px;
+    }
+    
+    button[type="submit"] {
+        padding: 10px 20px;
+        font-size: 14px;
     }
 }

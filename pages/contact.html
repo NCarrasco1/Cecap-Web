@@ -1,7 +1,7 @@
-    <!DOCTYPE html>
-    <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
-    <head>
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,76 +14,85 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" />
     <title>Contacto</title>
-    </head>
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
 
-    <body>
-    <div id="navbar-placeholder"></div>
-    <div class="container">
+<body>
+    <header class="headercont" id="inicio">
+        <nav class="nav">
+            <button class="nav_burger" aria-label="Abrir menú">
+                <img src="../Img/menu.png" alt="menu hamburguesa" class="burger_img" />
+            </button>
+            <div class="nav_logo">
+                <a href="../index.html#inicio">
+                    <img src="../Img/Cecap con fondo (2).svg" alt="Logo"/>
+                </a>
+            </div>
+
+            <!-- MENÚ LATERAL CON LOS ENLACES -->
+            <ul class="nav_link" id="nav">
+                <li class="nav_items">
+                    <a href="../index.html" class="nav_links">Inicio</a>
+                </li>
+                <li class="nav_items">
+                    <a href="../index.html#goals" class="nav_links">Objetivos</a>
+                </li>
+                <li class="nav_items">
+                    <a href="../index.html#services" class="nav_links">Servicios</a>
+                </li>
+                <li class="nav_items">
+                    <a href="../index.html#types" class="nav_links">Tipos de Cáncer</a>
+                </li>
+                <li class="nav_items">
+                    <a href="../index.html#us" class="nav_links">Nosotros</a>
+                </li>
+                <li class="nav_items">
+                    <a href="../index.html#questions" class="nav_links">Preguntas Frecuentes</a>
+                </li>
+                <li class="nav_items">
+                    <a href="../pages/contact.html" class="nav_links">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+            <div class="container">
         <h2>Formulario de Consulta</h2>
         <form action="https://formsubmit.co/d589ad93650ef43212b3e7b73a9945fe" method="POST">
-        <!-- Campo de Nombre -->
-        <div class="mb-3">
-            <label for="nombre" class="form-label">Nombre</label>
-            <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre" name="name" required />
-        </div>
+            <!-- Campo de Nombre -->
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre" name="name" required />
+            </div>
 
-        <!-- Campo de Email -->
-        <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" placeholder="Ingrese su Email" name="email" required />
-        </div>
+            <!-- Campo de Email -->
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Ingrese su Email" name="email" required />
+            </div>
 
-        <!-- Campo de Asunto -->
-        <div class="mb-3">
-            <label for="subject" class="form-label">Asunto</label>
-            <input type="text" class="form-control" id="subject" placeholder="Ingrese su número de teléfono" required />
-        </div>
+            <!-- Campo de Asunto -->
+            <div class="mb-3">
+                <label for="subject" class="form-label">Asunto</label>
+                <input type="text" class="form-control" id="subject" placeholder="Ingrese el asunto" name="subject" required />
+            </div>
 
-        <!-- Campo de Consulta -->
-        <div class="mb-3">
-            <label for="consulta" class="form-label">Consulta</label>
-            <textarea class="form-control" id="consulta" rows="4" placeholder="Escriba su consulta aquí..." name="consulta"
-            required></textarea>
-        </div>
-        <!-- Botón de Enviar -->
-        <button type="submit" class="btn btn-light" data-bs-toggle="tooltip" title="Enviar consulta">Enviar</button>
+            <!-- Campo de Consulta -->
+            <div class="mb-3">
+                <label for="consulta" class="form-label">Consulta</label>
+                <textarea class="form-control" id="consulta" rows="4" placeholder="Escriba su consulta aquí..." name="consulta" required></textarea>
+            </div>
+            
+            <!-- Botón de Enviar -->
+            <button type="submit" class="btn btn-light" data-bs-toggle="tooltip" title="Enviar consulta">Enviar</button>
 
-        <input type="hidden" name="_next" value="http://127.0.0.1:5500">
-        <input type="hidden" name="_captcha" value="false">
-
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500">
+            <input type="hidden" name="_captcha" value="false">
         </form>
     </div>
 
     <!-- Botón de WhatsApp -->
     <div id="whatsapp-placeholder"></div>
-
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-4">
-        <div>
-        <ul class="list-inline">
-            <li class="list-inline-item" data-bs-toggle="tooltip" title="Ir a Instagram">
-            <a href="https://www.instagram.com/tucumanturismo" class="text-white me-3" target="_blank">
-                <i class="bi bi-instagram fs-2"></i>
-            </a>
-            </li>
-            <li class="list-inline-item" data-bs-toggle="tooltip" title="Ir a Facebook">
-            <a href="https://www.facebook.com/tucumanturismo" class="text-white me-3" target="_blank">
-                <i class="bi bi-facebook fs-2"></i>
-            </a>
-            </li>
-            <li class="list-inline-item" data-bs-toggle="tooltip" title="Enviar email">
-            <a href="mailto:informes@tucumanturismo.gob.ar" class="text-white me-3">
-                <i class="bi bi-envelope fs-2"></i>
-            </a>
-            </li>
-        </ul>
-        <p>
-            &copy; 2024 Santiago Di Colantonio. Todos los derechos reservados.
-        </p>
-        </div>
-    </footer>
-
-    <script src="../index.js"></script>
-    </body>
-
-    </html>
+    </header>
+    <script src="../js/menu.js"></script>
+</body>
+</html>
