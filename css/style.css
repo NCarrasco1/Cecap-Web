@@ -829,6 +829,13 @@
         padding: 60px 0;
     }
     
+    /* Header ocupa toda la pantalla */
+    .headercont {
+        height: 100vh;
+        min-height: 100vh;
+        max-height: none;
+    }
+    
     .header_title {
         font-size: 3.2rem;
     }
@@ -872,10 +879,11 @@
         padding: 20px 0;
     }
 
-    /* Header */
+    /* Header ocupa toda la pantalla en tablet */
     .headercont {
-        max-height: 70vh;
-        min-height: 500px;
+        height: 100vh;
+        min-height: 100vh;
+        max-height: none;
     }
 
     .header_title {
@@ -1112,12 +1120,17 @@
         padding: 15px 0;
     }
 
-    /* Header */
+    /* Header ocupa toda la pantalla en móvil */
     .headercont {
-        max-height: 60vh;
-        min-height: 450px;
+        height: 100vh;
+        min-height: 100vh;
+        max-height: none;
     }
 
+
+    .headercont::before {
+        background-position: 25% center; /* Ajustar posición de la imagen para móviles */
+    }
     .header_section {
         padding: 0 15px;
     }
@@ -1392,6 +1405,13 @@
 
     .nav_logo img {
         width: 100px;
+    }
+
+    /* Header sigue ocupando toda la pantalla */
+    .headercont {
+        height: 100vh;
+        min-height: 100vh;
+        max-height: none;
     }
 
     .header_title {
