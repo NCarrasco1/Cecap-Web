@@ -185,64 +185,151 @@ button[type="submit"]:hover {
     }
 }
 
-/* Responsive */
+/* ===== MEDIA QUERIES CORREGIDAS ===== */
+
+/* Tablet */
 @media (max-width: 768px) {
-    .navbar {
-        font-size: 20px;
+    .container {
+        flex: none !important; /* Quitar flex: 1 que causa el espacio extra */
+        margin: 120px auto 20px auto !important;
+        padding: 25px 15px;
+        width: 95% !important;
+        max-width: none !important;
+        min-height: auto !important; /* Sin altura mínima */
     }
 
-    .nav-link {
+    .container h2 {
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+    }
+
+    .form-control {
+        width: 100% !important;
+        max-width: none !important;
+        margin: 8px 0 !important;
+        padding: 10px 12px;
         font-size: 14px;
     }
 
-    .logo {
-        max-width: 70px;
+    .form-label {
+        text-align: left !important;
+        margin-left: 0 !important;
+        font-size: 15px;
     }
 
-    .footer {
-        height: 50px;
-        font-size: 16px;
-    }
-
-    .container {
-        padding: 20px;
-        margin-top: 30%;
+    button[type="submit"] {
+        padding: 12px 25px;
+        font-size: 15px;
+        width: auto !important;
+        max-width: none !important;
+        margin-bottom: 0 !important; /* Sin margen inferior extra */
     }
 
     .whatsapp-button {
         width: 50px;
         height: 50px;
+        bottom: 25px;
+        right: 25px;
     }
 
     .whatsapp-button i {
         font-size: 24px;
     }
-    
-    .form-control {
-        width: 90%; /* Más ancho en tablets */
-        margin: 8px auto;
-        padding: 10px 12px;
-    }
-    
-    .form-label {
-        margin-left: 5%; /* Ajustado para tablets */
-        font-size: 15px;
-    }
 }
 
+/* Móvil */
 @media (max-width: 480px) {
-    .navbar {
-        font-size: 16px;
+    .container {
+        flex: none !important; /* Quitar flex: 1 que causa el espacio extra */
+        margin: 100px auto 20px auto !important;
+        padding: 20px 15px 20px 15px !important; /* Padding uniforme */
+        width: 98% !important;
+        border-radius: 12px;
+        max-width: none !important;
+        min-height: auto !important; /* Sin altura mínima */
     }
 
-    .footer {
-        height: 40px;
+    .container h2 {
+        font-size: 1.4rem;
+        margin-bottom: 15px;
+    }
+
+    .form-control {
+        width: 100% !important;
+        max-width: none !important;
+        margin: 8px 0 !important;
+        padding: 10px;
         font-size: 14px;
     }
 
+    .form-label {
+        text-align: left !important;
+        margin-left: 0 !important;
+        font-size: 14px;
+        margin-bottom: 4px;
+    }
+
+    textarea.form-control {
+        min-height: 100px;
+    }
+
+    button[type="submit"] {
+        padding: 12px 20px;
+        font-size: 14px;
+        width: auto !important;
+        max-width: none !important;
+        margin-top: 15px !important;
+        margin-bottom: 0 !important; /* Sin margen inferior extra */
+    }
+
+    .whatsapp-button {
+        width: 45px;
+        height: 45px;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .whatsapp-button i {
+        font-size: 20px;
+    }
+}
+
+/* Móvil muy pequeño */
+@media (max-width: 320px) {
     .container {
-        padding: 15px;
-        margin-top: 30%;
+        flex: none !important; /* Quitar flex: 1 que causa el espacio extra */
+        margin: 90px auto 15px auto !important;
+        padding: 15px 10px 15px 10px !important; /* Padding uniforme */
+        width: 99% !important;
+        max-width: none !important;
+        min-height: auto !important; /* Sin altura mínima */
+    }
+
+    .container h2 {
+        font-size: 1.2rem;
+    }
+
+    .form-control {
+        width: 100% !important;
+        max-width: none !important;
+        margin: 8px 0 !important;
+        padding: 8px;
+        font-size: 13px;
+    }
+
+    .form-label {
+        text-align: left !important;
+        margin-left: 0 !important;
+        font-size: 13px;
+    }
+
+    button[type="submit"] {
+        padding: 10px 15px;
+        font-size: 13px;
+        width: auto !important;
+        max-width: none !important;
+        margin-top: 10px !important;
+        margin-bottom: 0 !important; /* Sin margen inferior extra */
     }
 
     .whatsapp-button {
@@ -251,23 +338,6 @@ button[type="submit"]:hover {
     }
 
     .whatsapp-button i {
-        font-size: 20px;
-    }
-    
-    .form-control {
-        width: 95%; /* Casi todo el ancho en móviles */
-        margin: 8px auto;
-        padding: 10px;
-        font-size: 14px;
-    }
-    
-    .form-label {
-        margin-left: 2.5%; /* Ajustado para móviles */
-        font-size: 14px;
-    }
-    
-    button[type="submit"] {
-        padding: 10px 20px;
-        font-size: 14px;
+        font-size: 18px;
     }
 }
